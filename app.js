@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require('./db/conn');
 const cookieParser = require("cookie-parser");
+const path = require("path");
+
 
 const Products = require("./models/productsSchema");
 const DefaultData = require("./defaultdata");
