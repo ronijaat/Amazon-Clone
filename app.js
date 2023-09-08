@@ -22,10 +22,10 @@ app.use(router);
 
 const PORT = process.env.PORT || 8005;
 
-// if(process.env.NODE_ENV === 'production') {
-//     app.use(express.static("client/build"));
-// }
-// app.use(express.static(path.join()))
+if(process.env.NODE_ENV === 'production') {
+    app.use(express.static("client/build"));
+}
+app.use(express.static("client/build"))
 
 app.listen(PORT,()=>{
     console.log(`server is running on port number ${PORT}`);
