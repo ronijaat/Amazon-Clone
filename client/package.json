@@ -36,8 +36,8 @@
       "react-app",
       "react-app/jest"
     ]
-  },
-  "devServer": {
+  },"devServer": {
+    "compress": true,
     "allowedHosts": "all"
   },
   "browserslist": {
